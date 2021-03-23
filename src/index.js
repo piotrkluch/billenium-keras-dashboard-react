@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+localStorage.setItem('apiKey', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJhZG1pbiJ9.pVAm6V1ybQDZm1Fl0P2ToucSgqNHWJunRpzjSURqF6M');
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

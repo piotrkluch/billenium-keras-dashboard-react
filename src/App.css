@@ -3,29 +3,81 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 75px 0;
+  height: 15vmin;
+  border-radius: 500px;
+  transform: scale(1);
+  animation: App-logo-spin infinite 20s linear;
+
+  /* #1 */
+  border: 12px solid hsl(0, 0%, 0%);
+  
+  /* #2 */
+  padding: 12px;
+  background: hsl(228, 100%, 49%);
+  
+  /* #4 AND INFINITY!!! (CSS3 only) */
+  box-shadow:
+      0 0 0 6px hsl(0, 91%, 49%),
+      0 0 250px 2px hsl(0, 0%, 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+.App-logo:active {
+  cursor: pointer;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #08204f;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-body {
+  background-color: #082154;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-bottom: 250px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-Predictions-Input {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 75%;
+  margin-left: -20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  color: white;
+
+  /* #1 */
+  border: 12px solid hsl(0, 0%, 0%);
+  
+  /* #2 */
+  padding: 12px;
+  background: hsl(228, 100%, 49%);
+  
+  /* #4 AND INFINITY!!! (CSS3 only) */
+  box-shadow:
+  0 0 0 6px hsl(0, 91%, 49%),
+  0 0 250px 2px hsl(0, 0%, 100%);
 }
 
 @keyframes App-logo-spin {
